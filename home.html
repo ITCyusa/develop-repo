@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #222;
+}
+
+header {
+    background: #2d2d7b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+#posts {
+    flex: 3;
+}
+
+.post {
+    background: #fff;
+    margin-bottom: 24px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.post h2 {
+    margin-top: 0;
+    color: #2d2d7b;
+}
+
+.meta {
+    color: #888;
+    font-size: 0.95em;
+    margin-bottom: 12px;
+}
+
+aside {
+    flex: 1;
+    margin-left: 30px;
+    background: #eef1fa;
+    padding: 18px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    height: fit-content;
+}
+
+footer {
+    text-align: center;
+    padding: 16px 0;
+    background: #2d2d7b;
+    color: #fff;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        margin-left: 0;
+        margin-top: 24px;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="posts">
+            <article class="post">
+                <h2>Welcome to My Blog</h2>
+                <p class="meta">Posted on June 30, 2025 by ITCyusa</p>
+                <p>
+                    This is the first post on my new blog! Stay tuned for more content about web development, programming, and tech tips.
+                </p>
+            </article>
+            <article class="post">
+                <h2>Getting Started with HTML & CSS</h2>
+                <p class="meta">Posted on June 29, 2025 by ITCyusa</p>
+                <p>
+                    HTML and CSS are the building blocks of the web. In this post, we'll cover the basics to help you start building your own website.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h3>About Me</h3>
+            <p>
+                Hi! I'm ITCyusa, a web enthusiast sharing my journey and knowledge about web development.
+            </p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
